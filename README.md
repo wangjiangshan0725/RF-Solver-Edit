@@ -40,7 +40,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 ### RF-Solver
 <p>
 <img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
-We drive the exact fomulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
+We derive the exact fomulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
 </p>
 
 ### RF-Edit
