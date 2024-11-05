@@ -17,8 +17,8 @@ This repository is the official Pytorch implementation for [Taming Rectified Flo
 
 
 
-<p align="center">
-We propose **RF-Solver** to solve the rectified flow ODE with less error, thus enhancing both sampling quality and inversion-reconstruction accuracy for rectified-flow-based generative models. Furthermore, we propose **RF-Edit** to leverage the RF-Solver for image and video editing tasks. Our methods achieve impressive performance on various tasks, including text-to-image generation, image/video inversion, and image/video editing. 
+<p>
+We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less error, thus enhancing both sampling quality and inversion-reconstruction accuracy for rectified-flow-based generative models. Furthermore, we propose <strong>RF-Edit</strong> to leverage the RF-Solver for image and video editing tasks. Our methods achieve impressive performance on various tasks, including text-to-image generation, image/video inversion, and image/video editing. 
 </p>
 
 
@@ -38,13 +38,13 @@ We propose **RF-Solver** to solve the rectified flow ODE with less error, thus e
 
 ## Method
 ### RF-Solver
-<p align="center">
+<p>
 <img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
 We drive the exact fomulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
 </p>
 
 ### RF-Edit
-<p align="center">
+<p>
 <img src="assets/repo_figures/Picture3.jpg" width="1080px"/>
 Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structual information of source image/video. RF-Edit contains two sub-modules, espectively for image editing and video editing.
 </p>
@@ -59,6 +59,7 @@ pip install -e ".[all]"
 ```
 
 ### Image Editing
+We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. It takes about 80s to run each experiments on a single A100 GPU. (We plan to optimize the code for feature sharing in the future to further improve runtime efficiency!)
 <table class="center">
 <tr>
   <td width=10% align="center">Source image</td>
@@ -81,7 +82,18 @@ pip install -e ".[all]"
 
 </table>
 
-
+### Edit Your Own Image
+You can run the following scripts to edit your own image. The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highlt related to the performance of editing. We suggest to tune this hyper-parameter from 1 to 6, selecting the results with best visual quality.
+```
+python edit.py  --source_prompt [describe the content of your image or leaves it as null] \
+                --target_prompt [describe your editing requirements] \
+                --guidance 2 \
+                --source_img_dir [the path of your source image] \
+                --num_steps 15  \
+                --inject [typically set to a number between 1 to 6] \
+                --name 'flux-dev' --offload \
+                --output_dir [output path] 
+```
 
 
 ## Gallery
