@@ -101,32 +101,18 @@ class Flux(nn.Module):
         ids = torch.cat((txt_ids, img_ids), dim=1)
         pe = self.pe_embedder(ids)
 
-        info['type'] = 'double'
-        cnt = 0
         for block in self.double_blocks:
-            # if info['inject']:
-            #     if info['inverse']:
-            #         print("!save! ", info['feature_path'] + str(info['t']) + '_' + str(info['second_order']) + '_' + str(info['id']) + '_' + info['type'] + '.pth')
-            #         torch.save(img, info['feature_path'] + str(info['t']) + '_' + str(info['second_order']) + '_' + str(info['id']) + '_' + info['type'] + '.pth')
-            #     if not info['inverse']:
-            #         print("!load! ", info['feature_path'] + str(info['t']) + '_' + str(info['second_order']) + '_' + str(info['id']) + '_' + info['type'] + '.pth')
-            #         # import pdb;pdb.set_trace()
-            #         img = torch.load(info['feature_path'] + str(info['t']) + '_' + str(info['second_order']) + '_' + str(info['id']) + '_' + info['type'] + '.pth', weights_only=True)
-            info['id'] = cnt
             img, txt = block(img=img, txt=txt, vec=vec, pe=pe, info=info)
-            cnt += 1
 
-
-        # import pdb;pdb.set_trace()
         cnt = 0
-        img = torch.cat((txt, img), 1) #[8, 512, 3072] + [8, 900, 3072] -> 
+        img = torch.cat((txt, img), 1) 
         info['type'] = 'single'
         for block in self.single_blocks:
             info['id'] = cnt
-            img = block(img, vec=vec, pe=pe, info=info)
+            img, info = block(img, vec=vec, pe=pe, info=info)
             cnt += 1
 
         img = img[:, txt.shape[1] :, ...]
 
         img = self.final_layer(img, vec)  # (N, T, patch_size ** 2 * out_channels)
-        return img
+        return img, info

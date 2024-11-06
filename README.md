@@ -2,7 +2,7 @@
 
 This repository is the official Pytorch implementation for [Taming Rectified Flow for Inversion and Editing](https://arxiv.org/abs/2312.04410).
 
- [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2312.04410) 
+ [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2312.04410)
 
 > **Taming Rectified Flow for Inversion and Editing**  
 > [Jiangshan Wang](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en),
@@ -59,13 +59,13 @@ pip install -e ".[all]"
 ```
 
 ### Image Editing
-We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. It takes about 80s to run each experiments on a single A100 GPU. (We plan to optimize the code for feature sharing in the future to further improve runtime efficiency!)
+We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. It takes about 45s to run each experiments on a single A100 GPU. (Not include the time to load the pretrained-weight of FLUX)
 <table class="center">
 <tr>
   <td width=10% align="center">Source image</td>
-  <td width=30% align="center"><img src="examples/source/hiking.jpg" raw=true></td>
-	<td width=30% align="center"><img src="examples/source/horse.jpg" raw=true></td>
-  <td width=30% align="center"><img src="examples/source/boy.jpg" raw=true></td>
+  <td width=30% align="center"><img src="src/examples/source/hiking.jpg" raw=true></td>
+	<td width=30% align="center"><img src="src/examples/source/horse.jpg" raw=true></td>
+  <td width=30% align="center"><img src="src/examples/source/boy.jpg" raw=true></td>
 </tr>
 <tr>
   <td width="10%" align="center">Editing Scripts</td>
@@ -75,22 +75,22 @@ We have provided several scripts to reproduce the results in the paper. The reso
 </tr>
 <tr>
   <td width=10% align="center">Edtied image</td>
-  <td width=30% align="center"><img src="examples/edit/hiking.jpg" raw=true></td>
-	<td width=30% align="center"><img src="examples/edit/horse.jpg" raw=true></td>
-  <td width=30% align="center"><img src="examples/edit/boy.jpg" raw=true></td>
+  <td width=30% align="center"><img src="src/examples/edit/hiking.jpg" raw=true></td>
+	<td width=30% align="center"><img src="src/examples/edit/horse.jpg" raw=true></td>
+  <td width=30% align="center"><img src="src/examples/edit/boy.jpg" raw=true></td>
 </tr>
 
 </table>
 
 ### Edit Your Own Image
-You can run the following scripts to edit your own image. The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highlt related to the performance of editing. We suggest to tune this hyper-parameter from 1 to 6, selecting the results with best visual quality.
+You can run the following scripts to edit your own image. The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. We suggest to tune this hyper-parameter from 2 to 8, selecting the results with best visual quality.
 ```
 python edit.py  --source_prompt [describe the content of your image or leaves it as null] \
                 --target_prompt [describe your editing requirements] \
                 --guidance 2 \
                 --source_img_dir [the path of your source image] \
-                --num_steps 15  \
-                --inject [typically set to a number between 1 to 6] \
+                --num_steps 30  \
+                --inject [typically set to a number between 2 to 8] \
                 --name 'flux-dev' --offload \
                 --output_dir [output path] 
 ```

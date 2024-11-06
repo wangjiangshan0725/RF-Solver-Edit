@@ -76,7 +76,7 @@ def main(
     num_steps = args.num_steps
     offload = args.offload
 
-    nsfw_classifier = pipeline("image-classification", model="/group/40034/hilljswang/flux/nsfw_image_detection", device=device)
+    nsfw_classifier = pipeline("image-classification", model="Falconsai/nsfw_image_detection", device=device)
 
     if name not in configs:
         available = ", ".join(configs.keys())
@@ -137,6 +137,7 @@ def main(
 
         info = {}
         info['feature_path'] = args.feature_path
+        info['feature'] = {}
         info['inject_step'] = args.inject
         if not os.path.exists(args.feature_path):
             os.mkdir(args.feature_path)
@@ -152,14 +153,14 @@ def main(
             model = model.to(torch_device)
 
         # inversion initial noise
-        z = denoise(model, **inp, timesteps=timesteps, guidance=1, inverse=True, info=info)
+        z, info = denoise(model, **inp, timesteps=timesteps, guidance=1, inverse=True, info=info)
         
         inp_target["img"] = z
 
         timesteps = get_schedule(opts.num_steps, inp_target["img"].shape[1], shift=(name != "flux-schnell"))
 
         # denoise initial noise
-        x = denoise(model, **inp_target, timesteps=timesteps, guidance=guidance, inverse=False, info=info)
+        x, _ = denoise(model, **inp_target, timesteps=timesteps, guidance=guidance, inverse=False, info=info)
         
         if offload:
             model.cpu()
