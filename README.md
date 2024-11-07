@@ -1,8 +1,8 @@
 # RF-Solver-Edit
 
-This repository is the official Pytorch implementation for [Taming Rectified Flow for Inversion and Editing](https://arxiv.org/abs/2312.04410).
+This repository is the official Pytorch implementation for [Taming Rectified Flow for Inversion and Editing]().
 
- [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2312.04410)
+ [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)]()
 
 > **Taming Rectified Flow for Inversion and Editing**  
 > [Jiangshan Wang](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en),
@@ -32,6 +32,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 - [2024.11.08] Paper released!
 
 ## ToDo
+- ☐ Release the gradio demo
 - ☐ Release scripts to for more image editing cases
 - ☐ Release the code for video editing
 
@@ -59,7 +60,7 @@ pip install -e ".[all]"
 ```
 
 ### Image Editing
-We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. It takes about 45s to run each experiments on a single A100 GPU. (Not include the time to load the pretrained-weight of FLUX)
+We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. We suggest to run the experiment on a single A100 GPU
 <table class="center">
 <tr>
   <td width=10% align="center">Source image</td>
@@ -120,7 +121,7 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
-
+comming soon
 ```
 
 ## Acknowledgements
