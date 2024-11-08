@@ -1,8 +1,8 @@
 # RF-Solver-Edit
 
-This repository is the official Pytorch implementation for [Taming Rectified Flow for Inversion and Editing]().
+This repository is the official Pytorch implementation for [Taming Rectified Flow for Inversion and Editing](https://arxiv.org/abs/2411.04746).
 
- [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)]()
+ [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2411.04746)
 
 > **Taming Rectified Flow for Inversion and Editing**  
 > [Jiangshan Wang](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en),
@@ -121,7 +121,15 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
-comming soon
+@misc{wang2024tamingrectifiedflowinversion,
+      title={Taming Rectified Flow for Inversion and Editing}, 
+      author={Jiangshan Wang and Junfu Pu and Zhongang Qi and Jiayi Guo and Yue Ma and Nisha Huang and Yuxin Chen and Xiu Li and Ying Shan},
+      year={2024},
+      eprint={2411.04746},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.04746}, 
+}
 ```
 
 ## Acknowledgements
