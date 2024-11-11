@@ -1,11 +1,11 @@
 <div align="center">
-<h2><br> <center>Taming Rectified Flow for Inversion and Editing</h2>
+  
+# Taming Rectified Flow for Inversion and Editing
 
 [Jiangshan Wang](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en), [Junfu Pu](https://pujunfu.github.io/), [Zhongang Qi](https://scholar.google.com/citations?hl=en&user=zJvrrusAAAAJ&view_op=list_works&sortby=pubdate), [Jiayi Guo](https://www.jiayiguo.net), [Yue Ma](https://mayuelala.github.io/), [Nisha Huang](https://scholar.google.com/citations?user=wTmPkSsAAAAJ&hl=en), [Yuxin Chen](https://scholar.google.com/citations?hl=en&user=dEm4OKAAAAAJ), [Xiu Li](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=en&oi=ao), [Ying Shan](https://scholar.google.com/citations?hl=en&user=4oXBp9UAAAAJ&view_op=list_works&sortby=pubdate)
 
 [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2411.04746)
 </div>
-
 
 
 
