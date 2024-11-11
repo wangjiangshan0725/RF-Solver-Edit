@@ -64,9 +64,9 @@ We have provided several scripts to reproduce the results in the paper. The reso
 <table class="center">
 <tr>
   <td width=10% align="center">Source image</td>
-  <td width=30% align="center"><img src="src/examples/source/hiking.jpg" raw=true></td>
-	<td width=30% align="center"><img src="src/examples/source/horse.jpg" raw=true></td>
-  <td width=30% align="center"><img src="src/examples/source/boy.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/source/hiking.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/source/horse.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/source/boy.jpg" raw=true></td>
 </tr>
 <tr>
   <td width="10%" align="center">Editing Scripts</td>
@@ -76,9 +76,9 @@ We have provided several scripts to reproduce the results in the paper. The reso
 </tr>
 <tr>
   <td width=10% align="center">Edtied image</td>
-  <td width=30% align="center"><img src="src/examples/edit/hiking.jpg" raw=true></td>
-	<td width=30% align="center"><img src="src/examples/edit/horse.jpg" raw=true></td>
-  <td width=30% align="center"><img src="src/examples/edit/boy.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/hiking.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/edit/horse.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/boy.jpg" raw=true></td>
 </tr>
 
 </table>
