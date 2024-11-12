@@ -2,7 +2,7 @@
   
 # Taming Rectified Flow for Inversion and Editing
 
-[Jiangshan Wang<sup>1,2</sup>](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en), [Junfu Pu<sup>2</sup>](https://pujunfu.github.io/), [Zhongang Qi<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=zJvrrusAAAAJ&view_op=list_works&sortby=pubdate), [Jiayi Guo<sup>1</sup>](https://www.jiayiguo.net), [Yue Ma<sup>3</sup>](https://mayuelala.github.io/), <br> [Nisha Huang<sup>1</sup>](https://scholar.google.com/citations?user=wTmPkSsAAAAJ&hl=en), [Yuxin Chen<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=dEm4OKAAAAAJ), [Xiu Li<sup>1</sup>](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=en&oi=ao), [Ying Shan<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=4oXBp9UAAAAJ&view_op=list_works&sortby=pubdate)
+[Jiangshan Wang](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en)<sup>1,2</sup>, [Junfu Pu](https://pujunfu.github.io/)<sup>2</sup>, [Zhongang Qi<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=zJvrrusAAAAJ&view_op=list_works&sortby=pubdate), [Jiayi Guo](https://www.jiayiguo.net)<sup>1</sup>, [Yue Ma](https://mayuelala.github.io/)<sup>3</sup>, <br> [Nisha Huang](https://scholar.google.com/citations?user=wTmPkSsAAAAJ&hl=en)<sup>1</sup>, [Yuxin Chen](https://scholar.google.com/citations?hl=en&user=dEm4OKAAAAAJ)<sup>2</sup>, [Xiu Li](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=en&oi=ao)<sup>1</sup>, [Ying Shan](https://scholar.google.com/citations?hl=en&user=4oXBp9UAAAAJ&view_op=list_works&sortby=pubdate)<sup>2</sup>
 
 <sup>1</sup> Tsinghua University,  <sup>2</sup> Tencent ARC Lab,  <sup>3</sup> HKUST  
 
