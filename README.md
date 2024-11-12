@@ -23,18 +23,18 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 <img src="assets/repo_figures/Picture1.jpg" width="1080px"/>
 </p>
 
-## News
+## 🔥 News
 - [2024.11.11] The homepage of the project is avaible!
 - [2024.11.08] Code for image editing is released!
 - [2024.11.08] Paper released!
 
-## ToDo
+## 👨‍💻 ToDo
 - ☐ Release the gradio demo
 - ☐ Release scripts to for more image editing cases
 - ☐ Release the code for video editing
 
 
-## Method
+## 📖 Method
 ### RF-Solver
 <p>
 <img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
@@ -47,7 +47,7 @@ We derive the exact fomulation of the solution for Rectified Flow ODE. The non-l
 Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structual information of source image/video. RF-Edit contains two sub-modules, espectively for image editing and video editing.
 </p>
 
-## Code
+## 🔨 Code
 ### Setup
 The environment of our code is the same as FLUX, you can refer to the [official repo](https://github.com/black-forest-labs/flux/tree/main) of FLUX, or running the following command to construct the environment.
 ```
@@ -94,7 +94,7 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 ```
 
 
-## Gallery
+## 🖼️ Gallery
 ### Inversion and Reconstruction  
 
 <p align="center">
@@ -113,7 +113,7 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 <img src="assets/repo_figures/Picture6.jpg" width="1080px"/>
 </p>
 
-## Citation
+## 🖋️ Citation
 
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
