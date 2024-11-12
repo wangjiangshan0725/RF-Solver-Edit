@@ -2,7 +2,9 @@
   
 # Taming Rectified Flow for Inversion and Editing
 
-[Jiangshan Wang](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en), [Junfu Pu](https://pujunfu.github.io/), [Zhongang Qi](https://scholar.google.com/citations?hl=en&user=zJvrrusAAAAJ&view_op=list_works&sortby=pubdate), [Jiayi Guo](https://www.jiayiguo.net), [Yue Ma](https://mayuelala.github.io/), <br> [Nisha Huang](https://scholar.google.com/citations?user=wTmPkSsAAAAJ&hl=en), [Yuxin Chen](https://scholar.google.com/citations?hl=en&user=dEm4OKAAAAAJ), [Xiu Li](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=en&oi=ao), [Ying Shan](https://scholar.google.com/citations?hl=en&user=4oXBp9UAAAAJ&view_op=list_works&sortby=pubdate)
+[Jiangshan Wang<sup>1,2</sup>](https://scholar.google.com/citations?user=HoKoCv0AAAAJ&hl=en), [Junfu Pu<sup>2</sup>](https://pujunfu.github.io/), [Zhongang Qi<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=zJvrrusAAAAJ&view_op=list_works&sortby=pubdate), [Jiayi Guo<sup>1</sup>](https://www.jiayiguo.net), [Yue Ma<sup>3</sup>](https://mayuelala.github.io/), <br> [Nisha Huang<sup>1</sup>](https://scholar.google.com/citations?user=wTmPkSsAAAAJ&hl=en), [Yuxin Chen<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=dEm4OKAAAAAJ), [Xiu Li<sup>1</sup>](https://scholar.google.com/citations?user=Xrh1OIUAAAAJ&hl=en&oi=ao), [Ying Shan<sup>2</sup>](https://scholar.google.com/citations?hl=en&user=4oXBp9UAAAAJ&view_op=list_works&sortby=pubdate)
+
+<sup>1</sup> Tsinghua University  <sup>2</sup> Tencent ARC Lab  <sup>3</sup> HKUST  
 
 [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2411.04746)
 <a href='https://rf-solver-edit.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
