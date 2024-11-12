@@ -118,14 +118,12 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
-@misc{wang2024tamingrectifiedflowinversion,
-      title={Taming Rectified Flow for Inversion and Editing}, 
-      author={Jiangshan Wang and Junfu Pu and Zhongang Qi and Jiayi Guo and Yue Ma and Nisha Huang and Yuxin Chen and Xiu Li and Ying Shan},
-      year={2024},
-      eprint={2411.04746},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.04746}, 
+@article{wang2024taming,
+  title={Taming Rectified Flow for Inversion and Editing},
+  author={Wang, Jiangshan and Pu, Junfu and Qi, Zhongang and Guo, Jiayi and Ma, Yue and Huang, Nisha and Chen, Yuxin and Li, Xiu and Shan, Ying},
+  journal={arXiv e-prints},
+  pages={arXiv--2411},
+  year={2024}
 }
 ```
 
