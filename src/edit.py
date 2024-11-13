@@ -98,7 +98,8 @@ def main(
         ae.encoder.to(torch_device)
     
     init_image = None
-    init_image = np.array(Image.open(args.source_img_dir))
+    init_image = np.array(Image.open(args.source_img_dir).convert('RGB'))
+    
     shape = init_image.shape
 
     new_h = shape[0] if shape[0] % 16 == 0 else shape[0] - shape[0] % 16
