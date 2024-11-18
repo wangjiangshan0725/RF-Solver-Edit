@@ -50,17 +50,16 @@ We derive the exact formulation of the solution for Rectified Flow ODE. The non-
 Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structual information of source image/video. RF-Edit contains two sub-modules, espectively for image editing and video editing.
 </p>
 
-# 🔨 Code
-## Setup
+# 🔨 Code Setup
 The environment of our code is the same as FLUX, you can refer to the [official repo](https://github.com/black-forest-labs/flux/tree/main) of FLUX, or running the following command to construct the environment.
 ```
 conda create --name RF-Solver-Edit python=3.10
 conda activate RF-Solver-Edit
 pip install -e ".[all]"
 ```
-## Edit Your Own Image
+# 🪄 Edit Your Own Image
 
-### Gradio Demo
+## Gradio Demo
 We privide the gradio demo for image editing. Run the following command:
 ```
 cd src
@@ -72,7 +71,7 @@ Here is an example for using the gradio demo to edit an image!
 </div>
 Note that here "Number of inject steps" means the steps of feature sharing in RF-Edit, which is highly related to the quality of edited results. We suggest to tune this parameter, selecting the results with best visual quality.
 
-### Command Line
+## Command Line
 You can also run the following scripts to edit your own image. 
 ```
 cd src
@@ -88,11 +87,11 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 Similarly, The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. 
 
 
-## Examples for Image Editing
+# 🌰 Examples for Image Editing
 We have provided several scripts to reproduce the results in the paper, mainly including 3 types of editing: Stylization, Adding, Replacing. We suggest to run the experiment on a single A100 GPU.
 
 
-### Adding & Replacing
+## Adding & Replacing
 <table class="center">
 <tr>
   <td width=10% align="center">Source image</td>
@@ -116,7 +115,7 @@ We have provided several scripts to reproduce the results in the paper, mainly i
 </table>
 
 
-### Stylization
+## Stylization
 <table class="center">
 <tr>
   <td width=10% align="center">Ref Style</td>
