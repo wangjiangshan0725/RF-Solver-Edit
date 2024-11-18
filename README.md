@@ -25,33 +25,33 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 <img src="assets/repo_figures/Picture1.jpg" width="1080px"/>
 </p>
 
-## 🔥 News
+# 🔥 News
 - [2024.11.18] Gradio Demo for image editing is available!
 - [2024.11.11] The homepage of the project is available!
 - [2024.11.08] Code for image editing is released!
 - [2024.11.08] Paper released!
 
-## 👨‍💻 ToDo
+# 👨‍💻 ToDo
 - ☑️ Release the gradio demo
 - ☐ Release scripts to for more image editing cases
 - ☐ Release the code for video editing
 
 
-## 📖 Method
-### RF-Solver
+# 📖 Method
+## RF-Solver
 <p>
 <img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
 We derive the exact formulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
 </p>
 
-### RF-Edit
+## RF-Edit
 <p>
 <img src="assets/repo_figures/Picture3.jpg" width="1080px"/>
 Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structual information of source image/video. RF-Edit contains two sub-modules, espectively for image editing and video editing.
 </p>
 
-## 🔨 Code
-### Setup
+# 🔨 Code
+## Setup
 The environment of our code is the same as FLUX, you can refer to the [official repo](https://github.com/black-forest-labs/flux/tree/main) of FLUX, or running the following command to construct the environment.
 ```
 conda create --name RF-Solver-Edit python=3.10
@@ -59,7 +59,7 @@ conda activate RF-Solver-Edit
 pip install -e ".[all]"
 ```
 
-### Image Editing
+## Image Editing
 We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. We suggest to run the experiment on a single A100 GPU
 <table class="center">
 <tr>
@@ -83,8 +83,8 @@ We have provided several scripts to reproduce the results in the paper. The reso
 
 </table>
 
-### Edit Your Own Image
-#### Command Line
+## Edit Your Own Image
+### Command Line
 You can run the following scripts to edit your own image. The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. We suggest to tune this hyper-parameter from 2 to 8, selecting the results with best visual quality.
 ```
 cd src
@@ -97,7 +97,7 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
                 --name 'flux-dev' --offload \
                 --output_dir [output path] 
 ```
-#### Gradio Demo
+### Gradio Demo
 We also privide the gradio demo for image editing. Run the following command:
 ```
 cd src
@@ -109,26 +109,26 @@ Here is an example for using the gradio demo to edit an image!
 </p>
 
 
-## 🖼️ Gallery
-### Inversion and Reconstruction  
+# 🖼️ Gallery
+## Inversion and Reconstruction  
 
 <p align="center">
 <img src="assets/repo_figures/Picture4.jpg" width="1080px"/>
 </p>
 
-### Image Editing
+## Image Editing
 
 <p align="center">
 <img src="assets/repo_figures/Picture5.jpg" width="1080px"/>
 </p>
 
-### Video Editing
+## Video Editing
 
 <p align="center">
 <img src="assets/repo_figures/Picture6.jpg" width="1080px"/>
 </p>
 
-## 🖋️ Citation
+# 🖋️ Citation
 
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
@@ -141,8 +141,8 @@ If you find our work helpful, please **star 🌟** this repo and **cite 📑** o
 }
 ```
 
-## Acknowledgements
+# Acknowledgements
 We thank [FLUX](https://github.com/black-forest-labs/flux/tree/main) for their clean codebase.
 
-## Contact
+# Contact
 The code in this repository is still being reorganized. Errors that may arise during the organizing process could lead to code malfunctions or discrepancies from the original research results. If you have any questions or concerns, please send email to wjs23@mails.tsinghua.edu.cn.
