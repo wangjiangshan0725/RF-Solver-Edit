@@ -104,9 +104,9 @@ cd src
 python gradio_demo.py
 ```
 Here is an example for using the gradio demo to edit an image!
-<p style="text-align: center;">
-<img src="assets/repo_figures/Picture7.jpg" style="width:80%;" />
-</p>
+<div style="text-align: center;">
+  <img src="assets/repo_figures/Picture7.jpg" style="width:80%; display: block; margin: 0 auto;" />
+</div>
 
 
 # 🖼️ Gallery
