@@ -58,34 +58,22 @@ conda create --name RF-Solver-Edit python=3.10
 conda activate RF-Solver-Edit
 pip install -e ".[all]"
 ```
-
-## Image Editing
-We have provided several scripts to reproduce the results in the paper. The resolution of following images is 1360*768. We suggest to run the experiment on a single A100 GPU
-<table class="center">
-<tr>
-  <td width=10% align="center">Source image</td>
-  <td width=30% align="center"><img src="assets/repo_figures/examples/source/hiking.jpg" raw=true></td>
-	<td width=30% align="center"><img src="assets/repo_figures/examples/source/horse.jpg" raw=true></td>
-  <td width=30% align="center"><img src="assets/repo_figures/examples/source/boy.jpg" raw=true></td>
-</tr>
-<tr>
-  <td width="10%" align="center">Editing Scripts</td>
-  <td width="30%" align="center"><a href="src/boy.sh">+ hiking stick</a></td>
-  <td width="30%" align="center"><a href="src/horse.sh">horse -> camel</a></td>
-  <td width="30%" align="center"><a href="src/boy.sh">+ dog</a></td>
-</tr>
-<tr>
-  <td width=10% align="center">Edtied image</td>
-  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/hiking.jpg" raw=true></td>
-	<td width=30% align="center"><img src="assets/repo_figures/examples/edit/horse.jpg" raw=true></td>
-  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/boy.jpg" raw=true></td>
-</tr>
-
-</table>
-
 ## Edit Your Own Image
+
+### Gradio Demo
+We privide the gradio demo for image editing. Run the following command:
+```
+cd src
+python gradio_demo.py
+```
+Here is an example for using the gradio demo to edit an image! 
+<div style="text-align: center;">
+  <img src="assets/repo_figures/Picture7.jpg" style="width:80%; display: block; margin: 0 auto;" />
+</div>
+Note that here "Number of inject steps" means the steps of feature sharing in RF-Edit, which is highly related to the quality of edited results. We suggest to tune this parameter, selecting the results with best visual quality.
+
 ### Command Line
-You can run the following scripts to edit your own image. The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. We suggest to tune this hyper-parameter from 2 to 8, selecting the results with best visual quality.
+You can also run the following scripts to edit your own image. 
 ```
 cd src
 python edit.py  --source_prompt [describe the content of your image or leaves it as null] \
@@ -97,16 +85,72 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
                 --name 'flux-dev' --offload \
                 --output_dir [output path] 
 ```
-### Gradio Demo
-We also privide the gradio demo for image editing. Run the following command:
-```
-cd src
-python gradio_demo.py
-```
-Here is an example for using the gradio demo to edit an image!
-<div style="text-align: center;">
-  <img src="assets/repo_figures/Picture7.jpg" style="width:80%; display: block; margin: 0 auto;" />
-</div>
+Similarly, The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. 
+
+
+## Examples for Image Editing
+We have provided several scripts to reproduce the results in the paper, mainly including 3 types of editing: Stylization, Adding, Replacing. We suggest to run the experiment on a single A100 GPU.
+
+
+### Adding & Replacing
+<table class="center">
+<tr>
+  <td width=10% align="center">Source image</td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/source/hiking.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/source/horse.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/source/boy.jpg" raw=true></td>
+</tr>
+<tr>
+  <td width="10%" align="center">Editing Scripts</td>
+  <td width="30%" align="center"><a href="src/run_boy.sh">+ hiking stick</a></td>
+  <td width="30%" align="center"><a href="src/run_horse.sh">horse -> camel</a></td>
+  <td width="30%" align="center"><a href="src/run_boy.sh">+ dog</a></td>
+</tr>
+<tr>
+  <td width=10% align="center">Edtied image</td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/hiking.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/edit/horse.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/boy.jpg" raw=true></td>
+</tr>
+
+</table>
+
+
+### Stylization
+<table class="center">
+<tr>
+  <td width=10% align="center">Ref Style</td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/source/nobel.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/source/art.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/source/cartoon.jpg" raw=true></td>
+</tr>
+<tr>
+  <td width="10%" align="center">Editing Scripts</td>
+  <td width="30%" align="center"><a href="src/run_nobel_trump.sh">Trump</a></td>
+  <td width="30%" align="center"><a href="src/run_art_mari.sh"> Marilyn Monroe</a></td>
+  <td width="30%" align="center"><a href="src/run_cartoon_ein.sh">Einstein</a></td>
+</tr>
+<tr>
+  <td width=10% align="center">Edtied image</td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/nobel_Trump.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/edit/art_mari.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/cartoon_ein.jpg" raw=true></td>
+</tr>
+
+<tr>
+  <td width="10%" align="center">Editing Scripts</td>
+  <td width="30%" align="center"><a href="src/run_nobel_biden.sh">Biden</a></td>
+  <td width="30%" align="center"><a href="src/run_art_batman.sh">Batman</a></td>
+  <td width="30%" align="center"><a href="src/run_cartoon_herry.sh">Herry Potter</a></td>
+</tr>
+<tr>
+  <td width=10% align="center">Edtied image</td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/nobel_Biden.jpg" raw=true></td>
+	<td width=30% align="center"><img src="assets/repo_figures/examples/edit/art_batman.jpg" raw=true></td>
+  <td width=30% align="center"><img src="assets/repo_figures/examples/edit/cartoon_herry.jpg" raw=true></td>
+</tr>
+</table>
+
 
 
 # 🖼️ Gallery
