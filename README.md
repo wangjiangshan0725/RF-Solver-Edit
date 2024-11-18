@@ -26,6 +26,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 </p>
 
 # 🔥 News
+- [2024.11.18] More examples for style transfer is available!
 - [2024.11.18] Gradio Demo for image editing is available!
 - [2024.11.11] The homepage of the project is available!
 - [2024.11.08] Code for image editing is released!
@@ -33,7 +34,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 
 # 👨‍💻 ToDo
 - ☑️ Release the gradio demo
-- ☐ Release scripts to for more image editing cases
+- ☑️ Release scripts to for more image editing cases
 - ☐ Release the code for video editing
 
 
