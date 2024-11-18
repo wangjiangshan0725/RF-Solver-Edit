@@ -26,12 +26,13 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 </p>
 
 ## 🔥 News
-- [2024.11.11] The homepage of the project is avaible!
+- [2024.11.18] Gradio Demo for image editing is available!
+- [2024.11.11] The homepage of the project is available!
 - [2024.11.08] Code for image editing is released!
 - [2024.11.08] Paper released!
 
 ## 👨‍💻 ToDo
-- ☐ Release the gradio demo
+- ☑️ Release the gradio demo
 - ☐ Release scripts to for more image editing cases
 - ☐ Release the code for video editing
 
@@ -40,7 +41,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 ### RF-Solver
 <p>
 <img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
-We derive the exact fomulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
+We derive the exact formulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
 </p>
 
 ### RF-Edit
@@ -83,8 +84,10 @@ We have provided several scripts to reproduce the results in the paper. The reso
 </table>
 
 ### Edit Your Own Image
+#### Command Line
 You can run the following scripts to edit your own image. The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. We suggest to tune this hyper-parameter from 2 to 8, selecting the results with best visual quality.
 ```
+cd src
 python edit.py  --source_prompt [describe the content of your image or leaves it as null] \
                 --target_prompt [describe your editing requirements] \
                 --guidance 2 \
@@ -94,6 +97,16 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
                 --name 'flux-dev' --offload \
                 --output_dir [output path] 
 ```
+#### Gradio Demo
+We also privide the gradio demo for image editing. Run the following command:
+```
+cd src
+python gradio_demo.py
+```
+Here is an example for using the gradio demo to edit an image!
+<p>
+<img src="assets/repo_figures/Picture7.jpg" width="1080px"/>
+</p>
 
 
 ## 🖼️ Gallery
@@ -120,14 +133,11 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 If you find our work helpful, please **star 🌟** this repo and **cite 📑** our paper. Thanks for your support!
 
 ```
-@misc{wang2024tamingrectifiedflowinversion,
-      title={Taming Rectified Flow for Inversion and Editing}, 
-      author={Jiangshan Wang and Junfu Pu and Zhongang Qi and Jiayi Guo and Yue Ma and Nisha Huang and Yuxin Chen and Xiu Li and Ying Shan},
-      year={2024},
-      eprint={2411.04746},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2411.04746}, 
+@article{wang2024taming,
+  title={Taming Rectified Flow for Inversion and Editing},
+  author={Wang, Jiangshan and Pu, Junfu and Qi, Zhongang and Guo, Jiayi and Ma, Yue and Huang, Nisha and Chen, Yuxin and Li, Xiu and Shan, Ying},
+  journal={arXiv preprint arXiv:2411.04746},
+  year={2024}
 }
 ```
 
