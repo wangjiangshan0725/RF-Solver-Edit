@@ -128,12 +128,11 @@ We privide the gradio demo for image editing. Run the following command:
 cd src
 python gradio_demo.py
 ```
-Here is an example for using the gradio demo to edit an image! 
+Here is an example for using the gradio demo to edit an image! Note that here "Number of inject steps" means the steps of feature sharing in RF-Edit, which is highly related to the quality of edited results. We suggest to tune this parameter, selecting the results with best visual quality.
 <div style="text-align: center;">
   <img src="assets/repo_figures/Picture7.jpg" style="width:100%; display: block; margin: 0 auto;" />
 </div>
 
-Note that here "Number of inject steps" means the steps of feature sharing in RF-Edit, which is highly related to the quality of edited results. We suggest to tune this parameter, selecting the results with best visual quality.
 
 ## Command Line
 You can also run the following scripts to edit your own image. 
