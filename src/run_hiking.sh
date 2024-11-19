@@ -5,5 +5,5 @@ python edit.py  --source_prompt "A woman hiking on a trail with mountains in the
                 --num_steps 15  \
                 --inject 2 --offload \
                 --name 'flux-dev'  \
-                --output_dir 'examples/edit-result/hiking/' &
+                --output_dir 'examples/edit-result/hiking/' 
 
