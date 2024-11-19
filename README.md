@@ -51,7 +51,7 @@ We derive the exact formulation of the solution for Rectified Flow ODE. The non-
 Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structual information of source image/video. RF-Edit contains two sub-modules, espectively for image editing and video editing.
 </p>
 
-# 🔨 Code Setup
+# 🛠️ Code Setup
 The environment of our code is the same as FLUX, you can refer to the [official repo](https://github.com/black-forest-labs/flux/tree/main) of FLUX, or running the following command to construct the environment.
 ```
 conda create --name RF-Solver-Edit python=3.10
@@ -88,7 +88,7 @@ python edit.py  --source_prompt [describe the content of your image or leaves it
 Similarly, The ```--inject``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. 
 
 
-# 🌰 Examples for Image Editing
+# 🚀 Examples for Image Editing
 We have provided several scripts to reproduce the results in the paper, mainly including 3 types of editing: Stylization, Adding, Replacing. We suggest to run the experiment on a single A100 GPU.
 
 
