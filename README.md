@@ -158,6 +158,12 @@ Similarly, The ```--inject``` refers to the steps of feature sharing in RF-Edit,
 <img src="assets/repo_figures/Picture4.jpg" width="1080px"/>
 </p>
 
+## Image Stylization
+
+<p align="center">
+<img src="assets/repo_figures/Picture8.jpg" width="1080px"/>
+</p>
+
 ## Image Editing
 
 <p align="center">
