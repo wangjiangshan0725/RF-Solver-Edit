@@ -107,7 +107,7 @@ def main(
 
     init_image = init_image[:new_h, :new_w, :]
 
-    width, height = init_image.shape[0], init_image.shape[1]
+    height, width = init_image.shape[0], init_image.shape[1]
     init_image = encode(init_image, torch_device, ae)
 
     rng = torch.Generator(device="cpu")
