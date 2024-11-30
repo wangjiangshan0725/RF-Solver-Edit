@@ -8,7 +8,7 @@
 
 [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2411.04746)
 <a href='https://rf-solver-edit.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
-
+[![Huggingface space](https://img.shields.io/badge/🤗-Huggingface%20Space-orange.svg)](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit) 
 </div>
 
 
@@ -26,6 +26,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 </p>
 
 # 🔥 News
+- [2024.11.30] Our demo is available on 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit)!
 - [2024.11.18] More examples for style transfer are available!
 - [2024.11.18] Gradio Demo for image editing is available!
 - [2024.11.11] The homepage of the project is available!
@@ -123,7 +124,7 @@ We have provided several scripts to reproduce the results in the paper, mainly i
 # 🪄 Edit Your Own Image
 
 ## Gradio Demo
-We privide the gradio demo for image editing. Run the following command:
+We privide the gradio demo for image editing (which is also abailable on our 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit) !). Run the following command: 
 ```
 cd src
 python gradio_demo.py
