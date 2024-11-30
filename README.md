@@ -9,6 +9,7 @@
 [![arXiv](https://img.shields.io/badge/arXiv-RFSolverEdit-b31b1b.svg)](https://arxiv.org/abs/2411.04746)
 <a href='https://rf-solver-edit.github.io/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 [![Huggingface space](https://img.shields.io/badge/🤗-Huggingface%20Space-orange.svg)](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit) 
+[![ComfyUI](https://img.shields.io/badge/ComfyUI-Demo-blue.svg)](https://github.com/logtd/ComfyUI-Fluxtapoz) 
 </div>
 
 
@@ -29,6 +30,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 - [2024.11.30] Our demo is available on 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit)!
 - [2024.11.18] More examples for style transfer are available!
 - [2024.11.18] Gradio Demo for image editing is available!
+- [2024.11.16] Thanks to @[logtd](https://github.com/logtd) for integrating RF-Solver into [ComfyUI](https://github.com/logtd/ComfyUI-Fluxtapoz)! 
 - [2024.11.11] The homepage of the project is available!
 - [2024.11.08] Code for image editing is released!
 - [2024.11.08] Paper released!
