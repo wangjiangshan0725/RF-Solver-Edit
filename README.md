@@ -106,7 +106,7 @@ We have provided several scripts to reproduce the results in the paper, mainly i
 </tr>
 <tr>
   <td width="10%" align="center">Editing Scripts</td>
-  <td width="30%" align="center"><a href="src/run_boy.sh">+ hiking stick</a></td>
+  <td width="30%" align="center"><a href="src/run_hiking.sh">+ hiking stick</a></td>
   <td width="30%" align="center"><a href="src/run_horse.sh">horse -> camel</a></td>
   <td width="30%" align="center"><a href="src/run_boy.sh">+ dog</a></td>
 </tr>
