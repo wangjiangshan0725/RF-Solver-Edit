@@ -31,7 +31,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 - [2024.11.18] More examples for style transfer are available!
 - [2024.11.18] Gradio Demo for image editing is available!
 - [2024.11.16] Thanks to @[logtd](https://github.com/logtd) for integrating RF-Solver into [ComfyUI](https://github.com/logtd/ComfyUI-Fluxtapoz)! 
-- [2024.11.11] The homepage of the project is available!
+- [2024.11.11] The [homepage](https://rf-solver-edit.github.io/) of the project is available!
 - [2024.11.08] Code for image editing is released!
 - [2024.11.08] Paper released!
 
