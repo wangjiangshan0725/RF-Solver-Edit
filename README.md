@@ -124,7 +124,7 @@ We have provided several scripts to reproduce the results in the paper, mainly i
 # 🪄 Edit Your Own Image
 
 ## Gradio Demo
-We privide the gradio demo for image editing (which is also abailable on our 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit) !). Run the following command: 
+We privide the gradio demo for image editing, which is also abailable on our 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit)! You can also run the gradio demo on your own device using the following command: 
 ```
 cd src
 python gradio_demo.py
