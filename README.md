@@ -37,7 +37,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 
 # 👨‍💻 ToDo
 - ☑️ Release the gradio demo
-- ☑️ Release scripts to for more image editing cases
+- ☑️ Release scripts for more image editing cases
 - ☐ Release the code for video editing
 
 
@@ -51,7 +51,7 @@ We derive the exact formulation of the solution for Rectified Flow ODE. The non-
 ## RF-Edit
 <p>
 <img src="assets/repo_figures/Picture3.jpg" width="1080px"/>
-Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structual information of source image/video. RF-Edit contains two sub-modules, espectively for image editing and video editing.
+Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structural information of source image/video. RF-Edit contains two sub-modules, especially for image editing and video editing.
 </p>
 
 # 🛠️ Code Setup
@@ -126,12 +126,12 @@ We have provided several scripts to reproduce the results in the paper, mainly i
 # 🪄 Edit Your Own Image
 
 ## Gradio Demo
-We privide the gradio demo for image editing, which is also available on our 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit)! You can also run the gradio demo on your own device using the following command: 
+We provide the gradio demo for image editing, which is also available on our 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit)! You can also run the gradio demo on your own device using the following command: 
 ```
 cd src
 python gradio_demo.py
 ```
-Here is an example for using the gradio demo to edit an image! Note that here "Number of inject steps" means the steps of feature sharing in RF-Edit, which is highly related to the quality of edited results. We suggest to tune this parameter, selecting the results with best visual quality.
+Here is an example of using the gradio demo to edit an image! Note that here "Number of inject steps" means the steps of feature sharing in RF-Edit, which is highly related to the quality of edited results. We suggest tuning this parameter, and selecting the results with the best visual quality.
 <div style="text-align: center;">
   <img src="assets/repo_figures/Picture7.jpg" style="width:100%; display: block; margin: 0 auto;" />
 </div>
@@ -141,7 +141,7 @@ Here is an example for using the gradio demo to edit an image! Note that here "N
 You can also run the following scripts to edit your own image. 
 ```
 cd src
-python edit.py  --source_prompt [describe the content of your image or leaves it as null] \
+python edit.py  --source_prompt [describe the content of your image or leave it as null] \
                 --target_prompt [describe your editing requirements] \
                 --guidance 2 \
                 --source_img_dir [the path of your source image] \
@@ -196,4 +196,4 @@ If you find our work helpful, please **star 🌟** this repo and **cite 📑** o
 We thank [FLUX](https://github.com/black-forest-labs/flux/tree/main) for their clean codebase.
 
 # Contact
-The code in this repository is still being reorganized. Errors that may arise during the organizing process could lead to code malfunctions or discrepancies from the original research results. If you have any questions or concerns, please send email to wjs23@mails.tsinghua.edu.cn.
+The code in this repository is still being reorganized. Errors that may arise during the organizing process could lead to code malfunctions or discrepancies from the original research results. If you have any questions or concerns, please send emails to wjs23@mails.tsinghua.edu.cn.
