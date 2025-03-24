@@ -57,7 +57,7 @@ python3 edit_video.py   \
         --inject_step [typically set to a number between 1 to 5] \
         --embedded-cfg-scale [typically set to a number between 1 to 6] 
 ```
-In the above scripts, the ```--inject_step``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. We suggest to adjust the hyper-parameters of ```--inject_step``` and ```--embedded-cfg-scale``` to achieve best results.
+In the above scripts, the ```--inject_step``` refers to the steps of feature sharing in RF-Edit, which is highly related to the performance of editing. **When editing your own video, we suggest to adjust the hyper-parameters of ```--inject_step``` and ```--embedded-cfg-scale``` to achieve best results.**
 
 
 
