@@ -27,7 +27,7 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 </p>
 
 # 🔥 News
-- **[2025.3.24]** 🔥We have reorganized our code, and released the code for video editing!
+- **[2025.3.24]** 🔥We have re-organized our code, and releasing the code for **video editing**!
 - [2024.11.30] Our demo is available on 🤗 [Huggingface Space](https://huggingface.co/spaces/wjs0725/RF-Solver-Edit)!
 - [2024.11.24] Thanks @[logtd](https://github.com/logtd) for implementing RF-Solver in [LTX-Video](https://github.com/logtd/ComfyUI-LTXTricks)!
 - [2024.11.18] More examples for style transfer are available!
