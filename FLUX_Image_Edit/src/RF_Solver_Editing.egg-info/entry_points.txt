@@ -1,0 +1,2 @@
+[console_scripts]
+flux = flux.edit:main
