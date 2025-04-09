@@ -432,7 +432,7 @@ class HunyuanVideoEdit(Inference):
         source_video = read_video_from_path(source_video_path, transform_name='norm').unsqueeze(0)
         source_video = self.adjust_video_frames(source_video).to(torch.float16)
         # import pdb;pdb.set_trace()
-        width, height, video_length = source_video.shape[3], source_video.shape[4], source_video.shape[2]
+        height, width, video_length = source_video.shape[3], source_video.shape[4], source_video.shape[2]
         out_dict = dict()
 
         # ========================================================================
