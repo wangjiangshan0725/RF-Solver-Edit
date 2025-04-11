@@ -93,10 +93,13 @@ Note that the more powerful video generation model HunyuanVideo is released rece
 </p>
 
 ## Video Editing
-
+<p align="center">
+<img src="assets/repo_figures/Picture9.gif" width="1080px"/>
+</p>
 <p align="center">
 <img src="assets/repo_figures/Picture6.jpg" width="1080px"/>
 </p>
+
 
 # 🖋️ Citation
 
