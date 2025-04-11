@@ -56,20 +56,21 @@ We derive the exact formulation of the solution for Rectified Flow ODE. The non-
 Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structural information of source image/video. RF-Edit contains two sub-modules, especially for image editing and video editing.
 </p>
 
-# 🖼️ Image Editing
+# 💻 Code
+## Image Editing
 
 For image editing, RF-Edit employs FLUX as the backbone, which comprises several double blocks and single blocks. Double blocks independently modulate text and image features, while single blocks concatenate these features for unified modulation. In this architecture, RF-Edit shares features within the single blocks, as they capture information from both the source image and the source prompt, enhancing the ability of the model to preserve the structural information of the source image.
 
-<strong>😁 We have provided the code and demo for image editing using FLUX as the backbone, which can be found <a href="./FLUX_Image_Edit">Here</a>.</strong>
+<strong>We have provided the code and demo for image editing using FLUX as the backbone, which can be found <a href="./FLUX_Image_Edit">Here</a>.</strong>
 
-# 🎥 Video Editing
+## Video Editing
 
 For video editing, in our paper, we employ OpenSora as the backbone. The DiT blocks in OpenSora include spatial attention, temporal attention, and text cross-attention. Within this architecture, the structural information of the source video is captured in the spatial attention module, where we implement feature sharing.
 
 Note that the more powerful video generation model HunyuanVideo is released recently, which is also a RF-based method. The code for video editing in this Repo is implemented based on HunyuanVideo.
 
 
-<strong> 😁 We have provided the code and demo for video editing using HunyuanVideo as the backbone, which can be found <a href="./Hunyuanvideo_Video_Edit">Here</a>.</strong>
+<strong> We have provided the code and demo for video editing using HunyuanVideo as the backbone, which can be found <a href="./Hunyuanvideo_Video_Edit">Here</a>.</strong>
 
 
 # 🎨 Gallery
