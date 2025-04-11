@@ -43,20 +43,6 @@ We propose <strong>RF-Solver</strong> to solve the rectified flow ODE with less 
 - ☑️ Release the code for video editing
 
 
-# 📖 Method
-## RF-Solver
-<p>
-<img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
-We derive the exact formulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
-</p>
-
-## RF-Edit
-<p>
-<img src="assets/repo_figures/Picture3.jpg" width="1080px"/>
-Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structural information of source image/video. RF-Edit contains two sub-modules, especially for image editing and video editing.
-</p>
-
-
 # 🖼️ Code for Image Editing
 
 For image editing, RF-Edit employs FLUX as the backbone, which comprises several double blocks and single blocks. Double blocks independently modulate text and image features, while single blocks concatenate these features for unified modulation. In this architecture, RF-Edit shares features within the single blocks, as they capture information from both the source image and the source prompt, enhancing the ability of the model to preserve the structural information of the source image.
@@ -71,6 +57,7 @@ Note that the more powerful video generation model HunyuanVideo is released rece
 
 
 <strong> We have provided the code and demo for video editing using HunyuanVideo as the backbone, which can be found <a href="./Hunyuanvideo_Video_Edit">Here</a>.</strong>
+
 
 
 # 🎨 Gallery
@@ -100,6 +87,22 @@ Note that the more powerful video generation model HunyuanVideo is released rece
 
 <p align="center">
 <img src="assets/repo_figures/Picture4.jpg" width="1080px"/>
+</p>
+
+
+
+
+# 📖 Method
+## RF-Solver
+<p>
+<img src="assets/repo_figures/Picture2.jpg" width="1080px"/>
+We derive the exact formulation of the solution for Rectified Flow ODE. The non-linear part in this solution is processed by Taylor Expansion. Through higher order expansion, the approximation error in the solution is significantly reduced, thus achieving impressive performance on both text-to-image sampling and image/video inversion.
+</p>
+
+## RF-Edit
+<p>
+<img src="assets/repo_figures/Picture3.jpg" width="1080px"/>
+Based on RF-Solver, we further propose the RF-Edit for image and video editing. RF-Edit framework leverages the features from inversion in the denoising process, which enables high-quality editing while preserving the structural information of source image/video. RF-Edit contains two sub-modules, especially for image editing and video editing.
 </p>
 
 # 🖋️ Citation
