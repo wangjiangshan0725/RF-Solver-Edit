@@ -70,7 +70,7 @@ For video editing, in our paper, we employ OpenSora as the backbone. The DiT blo
 Note that the more powerful video generation model HunyuanVideo is released recently, which is also a RF-based method. The code for video editing in this Repo is implemented based on HunyuanVideo.
 
 
-<strong> 😁 We have provided the code and demo for video editing using HunyuanVideo as the backbone, which can be found <a href="./Hunyuanvideo_Video_Edit">Here</a>.</strong>
+<strong> We have provided the code and demo for video editing using HunyuanVideo as the backbone, which can be found <a href="./Hunyuanvideo_Video_Edit">Here</a>.</strong>
 
 
 # 🎨 Gallery
