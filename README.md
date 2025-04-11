@@ -58,7 +58,6 @@ Based on RF-Solver, we further propose the RF-Edit for image and video editing. 
 
 # 🖼️ Image Editing
 
-
 For image editing, RF-Edit employs FLUX as the backbone, which comprises several double blocks and single blocks. Double blocks independently modulate text and image features, while single blocks concatenate these features for unified modulation. In this architecture, RF-Edit shares features within the single blocks, as they capture information from both the source image and the source prompt, enhancing the ability of the model to preserve the structural information of the source image.
 
 <strong>😁 We have provided the code and demo for image editing using FLUX as the backbone, which can be found <a href="./FLUX_Image_Edit">Here</a>.</strong>
@@ -74,11 +73,7 @@ Note that the more powerful video generation model HunyuanVideo is released rece
 
 
 # 🎨 Gallery
-## Inversion and Reconstruction  
 
-<p align="center">
-<img src="assets/repo_figures/Picture4.jpg" width="1080px"/>
-</p>
 
 ## Image Stylization
 
@@ -100,6 +95,11 @@ Note that the more powerful video generation model HunyuanVideo is released rece
 <img src="assets/repo_figures/Picture6.jpg" width="1080px"/>
 </p>
 
+## Inversion and Reconstruction  
+
+<p align="center">
+<img src="assets/repo_figures/Picture4.jpg" width="1080px"/>
+</p>
 
 # 🖋️ Citation
 
